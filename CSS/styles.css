@@ -1,0 +1,493 @@
+body{
+	margin-right: 200px;
+	background-color:#171616;
+	color: #5B5959;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+font-family: serif;
+}
+
+/*colour testing */
+
+/* body.dark-mode { */
+  /* background-color: #171616; */
+/* } */
+
+/* body.light-mode { */
+  /* background-color: #9d9da2; */
+/* } */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Video */
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+#video {
+	height: 500px;
+}
+
+/* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+
+#shopdisk {
+   background-image: url("../Assets/Shop-Menu-Hover.png") no-repeat;
+}
+#aboutdisk {
+   background-image: url("../Assets/about-menu-hover.png") no-repeat;
+}
+#calenderdisk {
+   background-image: url("../Assets/calender-menu-hover.png") no-repeat;
+}
+#songdisk {
+   background-image: url("../Assets/song-menu-hover.png") no-repeat;
+}
+
+
+.menucontainer{
+  margin: auto 300px;
+  width:700px;
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-row: auto auto;
+}
+@media only screen and (max-width: 1500px) {  
+.menucontainer{
+  margin: auto 100px;;	
+}
+}
+
+@media only screen and (max-width: 1250px) {  
+.menucontainer{
+  margin: auto 0px;;	
+}
+}
+
+
+
+#top {
+	 font-size: 100px;
+	 background-color:#fcb3e7;
+	 background: url("../Assets/eminemheading2.jpg");
+	 padding: 4%;
+	 margin: 0%;
+ }
+ 
+#top1 {
+	 font-size: 75px;
+	 background-color:#3C3C3C;
+	 padding: 4%;
+	 margin: 0%;
+ } 
+#Slider{
+	padding: 0%;
+	position: relative;
+	top: 0px;
+	
+}
+
+#rectangle{
+    height: 500px;
+    width: 200px;
+	background-color:#FF0000;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.sidemenu {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidemenu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+
+#disk{
+  position: relative;
+}
+#disk a{
+  display: block;      
+  position: absolute;
+}
+
+}
+
+#navlist{
+	
+	display: inline;
+	
+	
+}
+
+
+@media only screen and (max-width: 1200px) {
+.sidemenu {
+width: 0px; 
+ }
+}
+ #top {
+	 font-size: 25px;
+ }
+
+ li a{
+	text-decoration: none;
+	color: #033a3d;
+	font-size: 20px
+}
+}
+
+@media only screen and (max-height: 500px) {
+ body {
+ background-color: lightblue;
+ }
+ #top {
+	 font-size: 15px;
+ }
+
+}
+
+
+/* Calender */
+.calenderdiv {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #202020;
+  padding: 10px;
+}
+#calmonth1 {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth2 {
+  background-color: #000000;
+  color:#ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth3 {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth4 {
+  background-color: #000000;
+  color:#ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth5 {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth6 {
+  background-color: #000000;
+  color:#ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth7 {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth8 {
+  background-color: #000000;
+  color:#ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth9 {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth10 {
+  background-color: #000000;
+  color:#ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth11 {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#calmonth12 {
+  background-color: #000000;
+  color:#ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.calheader {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #606060;
+  color:#ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+/* TEST FOR TIMELINE WORKING */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  .right {
+    left: 0%;
+  }
+}  
+
+/* Feedback Slider */
+.backfeedbackslider {
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.backslider:hover {
+    opacity: 1;
+}
+
+
+/* Footer */
+.footernavbar {
+  overflow: hidden;
+  background-color: #333;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footernavbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.footernavbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.footernavbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.footernavbar .icon {
+  display: none;
+}
+
+.radio {
+display: inline;
+}
