@@ -8,15 +8,79 @@ body{
 font-family: serif;
 }
 
-/*colour testing */
 
-/* body.dark-mode { */
-  /* background-color: #171616; */
-/* } */
 
-/* body.light-mode { */
-  /* background-color: #9d9da2; */
-/* } */
+li {list-style-type: none;
+font-size: 16pt;
+}
+.mail {
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+border: 1px soild silver;
+color: #000
+}
+.mail h2 {
+margin-left: 38px;
+}
+input {
+font-size: 20pt;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+input submit {
+font-size: 12pt;
+}
+.rq {
+color: #FF0000;
+font-size: 10pt;
+}
+
+
+
+
+
+
+
+form.nameform {
+    display: table;
+}
+
+div.nameform {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+	
+}
+
+.namediv{
+		width: 30%;
+		margin-left: 40%;
+}
+
+.emaildiv{
+		width: 30%;
+		margin-left: 40%;
+}
+
+.namediv label {
+	position: relative;
+    text-align: center;
+	top: 15px;
+	font-size: 20px;
+}
+
+.emaildiv label {
+	position: relative;
+    text-align: center;
+	top: 15px;
+	font-size: 20px;
+}
+
 
 
 html {
@@ -46,7 +110,7 @@ html {
 
 /* Style the navigation links */
 #myMenu li a {
-  background-color: #f6f6f6;
+/*   background-color: #f6f6f6; */   getting rid of this allows highlighting of choice
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
@@ -79,6 +143,13 @@ html {
   grid-template-columns: auto auto;
   grid-row: auto auto;
 }
+
+.draggable{
+	    display:inline;
+    background-color:green;
+    color:#F4D03F;
+}
+
 @media only screen and (max-width: 1500px) {  
 .menucontainer{
   margin: auto 100px;;	
@@ -91,9 +162,62 @@ html {
 }
 }
 
+@media only screen and (max-width: 1000px) {
+.menucontainer{
+  width:800px;
+}
+
+.diskmenu{
+    width: 400px;
+    height: 400px;
+}
+
+/* resize images */
+.diskmenu img {
+    width: 100%;
+    height: 100%;
+}
+}
+
+
+@media only screen and (max-width: 750px) {
+.menucontainer{
+  width:400px;
+}
+
+.diskmenu{
+    width: 200px;
+    height: 200px;
+}
+
+/* resize images */
+.diskmenu img {
+    width: 100%;
+    height: 100%;
+}
+}
+
+@media only screen and (max-width: 400px) {
+.menucontainer{
+  width:330px;
+}
+
+.diskmenu{
+    width: 165px;
+    height: 165px;
+}
+
+/* resize images */
+.diskmenu img {
+    width: 100%;
+    height: 100%;
+}
+}
+
 
 
 #top {
+	border:5px solid black;
 	 font-size: 100px;
 	 background-color:#fcb3e7;
 	 background: url("../Assets/eminemheading2.jpg");
@@ -102,11 +226,63 @@ html {
  }
  
 #top1 {
+	border:5px solid black;
 	 font-size: 75px;
 	 background-color:#3C3C3C;
 	 padding: 4%;
 	 margin: 0%;
- } 
+ }
+#top2 {
+	border:5px solid black;
+	 font-size: 75px;
+	 background-color:#3C3C3C;
+	 padding: 4%;
+	 margin: 0%;
+	 
+ }  
+#top3 {
+	border:5px solid black;
+	 font-size: 75px;
+	 background-color:#3C3C3C;
+	 padding: 4%;
+	 margin: 0%;
+ }
+#top4 {
+	border:5px solid black;
+	 font-size: 75px;
+	 background-color:#3C3C3C;
+	 padding: 4%;
+	 margin: 0%;
+	 
+ }
+ 
+#top5 {
+	border:5px solid black;
+	 font-size: 75px;
+	 background-color:#3C3C3C;
+	 padding: 4%;
+	 margin: 0%;
+	 
+ }
+ 
+#top6 {
+	border:5px solid black;
+	 font-size: 75px;
+	 background-color:#3C3C3C;
+	 padding: 4%;
+	 margin: 0%;
+	 
+}
+
+#top7 {
+	border:5px solid black;
+	 font-size: 75px;
+	 background-color:#3C3C3C;
+	 padding: 4%;
+	 margin: 0%;
+	 
+}
+ 
 #Slider{
 	padding: 0%;
 	position: relative;
@@ -114,33 +290,7 @@ html {
 	
 }
 
-#rectangle{
-    height: 500px;
-    width: 200px;
-	background-color:#FF0000;
-	margin-left: auto;
-    margin-right: auto;
-}
 
-.sidemenu {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-}
-
-.sidemenu a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-}
 
 
 #disk{
@@ -162,11 +312,9 @@ html {
 
 
 @media only screen and (max-width: 1200px) {
-.sidemenu {
-width: 0px; 
- }
 }
  #top {
+	 border:5px solid black;
 	 font-size: 25px;
  }
 
@@ -177,21 +325,11 @@ width: 0px;
 }
 }
 
-@media only screen and (max-height: 500px) {
- body {
- background-color: lightblue;
- }
- #top {
-	 font-size: 15px;
- }
-
-}
-
 
 /* Calender */
 .calenderdiv {
   display: grid;
-  grid-template-columns: auto auto auto;
+  /* grid-template-columns: auto auto auto; */
   background-color: #202020;
   padding: 10px;
 }
@@ -491,3 +629,98 @@ width: 0px;
 .radio {
 display: inline;
 }
+
+
+@media only screen and (max-width: 440px) {
+  #menumobile {
+    display: none;
+  }
+}
+
+
+
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+ul.grid{
+  background: #aaa;
+  width: 350px;
+  border: 1px solid;
+}
+ul.grid li{
+  list-style: none;
+  display: inline-block;
+  background: #222222;
+  min-height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  margin: 6px;
+  border: 1px solid;
+}
+
+.collection{
+  min-height: 150px;
+  max-width: 50%;
+  background: #aaa;
+  float: center;
+}
+.draggablediv{
+  float: center;
+}
+.draggable{
+  cursor: pointer;
+}
+.icon-remove{
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+.heading{
+  background: #999;
+  color: brown;
+  float: center;
+}
+
+#item1 {
+	 background: url("../Assets/walkonwater.jpg");
+
+ }
+ #item2 {
+	 background: url("../Assets/venom.jpg");
+
+ }#item3 {
+	 background: url("../Assets/notafraid.jpg");
+
+ }#item4 {
+	 background: url("../Assets/rapgod.jpg");
+
+ }#item5 {
+	 background: url("../Assets/whenimgone.jpg");
+
+ }#item6 {
+	 background: url("../Assets/mockingbird.jpg");
+
+ }
+ 
+ 
+ 
+

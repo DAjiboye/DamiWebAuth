@@ -1,17 +1,70 @@
+var setColour;
+
 window.onload = function() {
+	
+ document.getElementById("top1").style.backgroundColor = localStorage.getItem("backgroundcolor1");	
+ document.getElementById("top2").style.backgroundColor = localStorage.getItem("backgroundcolor1");
+ document.getElementById("top3").style.backgroundColor = localStorage.getItem("backgroundcolor1");
+ document.getElementById("top4").style.backgroundColor = localStorage.getItem("backgroundcolor1");
+ document.getElementById("top5").style.backgroundColor = localStorage.getItem("backgroundcolor1");
+ document.getElementById("top6").style.backgroundColor = localStorage.getItem("backgroundcolor1");
+ document.body.style.backgroundColor = localStorage.getItem("backgroundcolor1");
+	
  init();
+
 }
 
-function myFunctionbright/dark()
-{   
-    $("body").css("background-color", #9d9da2);
+
+function required()
+{
+var empt = document.form1.text1.value;
+var empt2 = document.form1.text2.value;
+if (empt == "" || empt2 == "")
+{
+alert("Details not accepted \n Reason: All fields are not filled");
+return false;
 }
+else 
+{
+alert('Thank you for subscribing.');
+return true; 
+}
+}
+
+
+function myFunctionbright() {
+    document.body.style.backgroundColor = "#9d9da2";
+	document.getElementById("top1").style.backgroundColor = "#B3B3B3";
+	document.getElementById("top2").style.backgroundColor = "#B3B3B3";
+	document.getElementById("top3").style.backgroundColor = "#B3B3B3";
+	document.getElementById("top4").style.backgroundColor = "#B3B3B3";
+	document.getElementById("top5").style.backgroundColor = "#B3B3B3";
+	setcolour2 = "#9d9da2"
+	setColour = "#B3B3B3"
+    localStorage.setItem("backgroundcolor1", setColour);
+
+}
+
+function myFunctiondark() {
+    document.body.style.backgroundColor = "#171616";
+	document.getElementById("top1").style.backgroundColor = "#3C3C3C";
+	document.getElementById("top2").style.backgroundColor = "#3C3C3C";
+	document.getElementById("top3").style.backgroundColor = "#3C3C3C";
+	document.getElementById("top4").style.backgroundColor = "#3C3C3C";
+    document.getElementById("top5").style.backgroundColor = "#3C3C3C";
+	setcolour2 = "#171616"
+    setColour = "#3C3C3C"
+    localStorage.setItem("backgroundcolor1", setColour);
+
+}
+
+
+
 
 
 function myFunction() {
-
-    // Declare variables
-    var input, filter, ul, li, a, i;
+	
+	    var input, filter, ul, li, a, i;
     input = document.getElementById("mySearch");
     filter = input.value.toUpperCase();
     ul = document.getElementById("myMenu");
@@ -26,29 +79,47 @@ function myFunction() {
             li[i].style.display = "none";
         }
     }
+	
 }
 
+var formsubmitvar = document.getElementById("formsubmit");
+if(formsubmitvar){
+formsubmitvar.addEventListener("click", function() {
+    alert("Thank you for subscribing");
+	document.getElementById('name').value = '';
+	document.getElementById('email').value = '';
+}, false)};
+
+
+
+
+
+function init(){
+	
 // Feedback Slider
-function ratingchanges () {
-if  (rating < 20) {
-document.getElementById('feedbackslider').style.background = "#a00303";
-}
-}
+// function ratingchanges () {
+// if  (rating < 20) {
+// document.getElementById('feedbackslider').style.background = "#a00303";
+// }
+// }
 
 	
 // Feedback Slider
-var slider = document.getElementById("myRange");
-var output = document.getElementById("rating");
-output.innerHTML = slider.value;
+// var slider = document.getElementById("myRange");
+// var output = document.getElementById("rating");
+// output.innerHTML = slider.value;
 
-slider.onchange = function() {
-  output.innerHTML = this.value;
-  console.log( this.value);
-  //sliderVal = this.value;
-  createbox(this.value);
-}		
+// slider.onchange = function() {
+  // output.innerHTML = this.value;
+  // console.log( this.value);
+  // sliderVal = this.value;
+  // createbox(this.value);
+// }	
 	
-// Video songs
+	
+	
+    // Declare variables
+
 document.getElementById('KillShotclk').addEventListener('click', video01);
 document.getElementById('Lovethewayclk').addEventListener('click', video02);
 document.getElementById('Notafraidclk').addEventListener('click', video03);
@@ -62,70 +133,56 @@ document.getElementById('GutsOverGloryclk').addEventListener('click', video10);
 	
 // Calender
 document.getElementById("calmonth1").addEventListener("click", function() {
-    alert("No events for January");
+    alert("Jan 23rd : San Diego,United States\nJan 30rd : New York,United States");
 }, false);
 
 document.getElementById("calmonth2").addEventListener("click", function() {
-    alert("No events for February!");
+    alert("Feb 3rd : Kawasaki,Japan\nFeb 10th: Yokohama,Japan");
 }, false);
 
 document.getElementById("calmonth3").addEventListener("click", function() {
-    alert("No events for March!");
+    alert("Mar 16th : Madrid,Spain\nMar 29th : Barcelona,Spain");
 }, false);
 
 document.getElementById("calmonth4").addEventListener("click", function() {
-    alert("No events for April!");
+    alert("Apr 10th : Istanbul,Turkey");
 }, false);
 
 document.getElementById("calmonth5").addEventListener("click", function() {
-    alert("No events for May!");
+    alert("No events scheduled for May");
 }, false);
 
 document.getElementById("calmonth6").addEventListener("click", function() {
-    alert("No events for June!");
+    alert("Jun 1st : London,United Kingdom\nJun 13th : Lincoln,United Kingdom\nJun 23rd : Manchester,United Kingdom\nJun 28th : Birmingham,United Kingdom");
 }, false);
 
 document.getElementById("calmonth7").addEventListener("click", function() {
-    alert("No events for July!");
+    alert("Jul 24th : Moscow,Russia\nJul 29th : Sofia,Bulgaria");
 }, false);
 
 document.getElementById("calmonth8").addEventListener("click", function() {
-    alert("No events for August!");
+    alert("Aug 10th : Brasília,Brazil\nAug 16th : Fortaleza,Brazil");
 }, false);
 
 document.getElementById("calmonth9").addEventListener("click", function() {
-    alert("No events for September!");
+    alert("No events scheduled for September");
 }, false);
 
 document.getElementById("calmonth10").addEventListener("click", function() {
-    alert("No events for October!");	
+    alert("No events scheduled for October");	
 }, false);
 
 document.getElementById("calmonth11").addEventListener("click", function() {
-    alert("No events for November!");
+    alert("Nov 21st : Munich,Germany (Subject to change)");
 }, false);
 
 document.getElementById("calmonth12").addEventListener("click", function() {
-    alert("No events for December!");
+    alert("Dec 8th : Chicago,United States\nDec 22nd : Houston,United States");
 }, false);	
 	
-  // var person = prompt("Whats your name?");
-  // var x = document.getElementById("top");
- // var name = document.getElementById("name");
- 
-  // menuhover = document.getElementById("shopdisk");
- 
- // var textcolour = prompt("Whats colour text do you want?");
-// x.style.color = textcolour;
- // if (textcolour != blue || red || orange || yellow || green)
-	  // x.style.color = textcolour;
- // name.innerHTML = person;
+}
+	
 
-// menuhover.addEventListener("mouseover", mousehoverin, false);
-// menuhover.addEventListener("mouseout", mousehoverout, false);
- 
- // alert("Welcome");
-// }
 
 window.changeColour = function(value)
 {
@@ -226,7 +283,7 @@ function video10()
 }
 
 
-function myFunction() {
+function myFunction2() {
   var x = document.getElementById("myNavbar");
   if (x.className === "footernavbar") {
     x.className += " responsive";
@@ -251,4 +308,29 @@ window.changeColour = function(value)
 
     }
     document.body.style.backgroundColor = backcolor;
+}
+
+
+
+
+var itemCount = 0;
+function allowDrop(event)
+{
+  event.preventDefault();
+}
+
+function drag(event)
+{   event.dataTransfer.setData("Item",event.target.id);
+}
+
+function drop(event)
+{
+  itemCount = itemCount + 1;
+  event.preventDefault();
+  var data=event.dataTransfer.getData("Item");
+  $targetElement = document.getElementById('target-grid');
+  $selectedElement = document.getElementById(data);
+ $targetElement.appendChild($selectedElement);
+ document.getElementById('itemcount').innerHTML = (itemCount+" Items");
+  $selectedElement.innerHTML += "<i class='icon-remove' data-item="+data+"></i>"; 
 }

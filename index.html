@@ -5,9 +5,10 @@
 </style>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="CSS/styles.css"> <!- link to css style sheet ->
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="JS/main.js"></script>
 </head>
-
+<!-- header -->
 
 <body>
 </script>
@@ -18,23 +19,7 @@
 </div>
 </section>
 
-<section id="header" style="opacity: 1;">
-
-<div class="sidemenu">
-    <a href="#Calender">Calender</a>
-	<a href="#Songs">Songs</a>
-    <a href="#Shop ">Shop</a>
-    <a href="#Demo">Demo</a>
-	<a href="#Feedback">Feedback</a>
-	<a href="#Contacts">Contacts</a>
-</div>
-</section>
-
-
-
-
-
-
+<!-- the menu map image, 4 for each of the pages -->
 
 <div class="menucontainer" id = "menudisk">
   <div class="diskmenu" id="shopdisk"><a href="#Shop"><img src="Assets/shop-menu.png"></a></div>
@@ -43,12 +28,26 @@
   <div class="diskmenu" id="songdisk"><a href="#Songs"><img src="Assets/Song-menu.png"></a></div>
 </div>
 
+<!-- small about info with citation -->
 
+
+<section id = "About"> 
+<div id = "Aboutdiv">
+<h1 id="top6"> ABOUT</h1> 
+
+<p>Born on October 17, 1972, in St. Joseph, Missouri, rap musician Eminem had a turbulent childhood. He released The Slim Shady LP in early 1999, and the album went multi-platinum, garnering Eminem two Grammy Awards and four MTV Video Music Awards. In 2000, the rapper released The Marshall Mathers LP, which was noted as the fastest-selling album in rap history. In 2010, Eminem released the Grammy-winning album Recovery, a highly autobiographical attempt to come to terms with his struggles with addiction and experience with rehabilitation. The Marshall Mathers LP 2 (2013) also garnered numerous accolades, and the artist later followed with Revival (2017) and Kamikaze (2018).</p>
+<cite> https://www.biography.com/people/eminem-9542093</cite></p>
+
+ 
+</div>
+</section>
+
+<!-- calender with event alert for each month -->
 
 <section id="Calender" style="opacity: 1;">
 <h1 id="top1"> CALENDER</h1> 
-<div class="calenderdiv">
   <div class="calheader">2019 CALENDER</div>
+<div class="calenderdiv">
  
   <div id="calmonth1">JAN</div>
   <div id="calmonth2">FEB</div>
@@ -65,54 +64,61 @@
 </div>
 </section>
 
+<!-- timeline, with awards and songs -->
 
-<h1 id="top1"> TIMELINE </h1> 
-
+<h1 id="top2"> TIMELINE </h1> 
+      <p>Enimen is a major global artist who has won multiple awards and release and abunadance of songs over the years. Here is a look back at some of these.</p>
 
 <div class="timeline">
-  <div class="container left">
+  <div class="container left"> <!-- switching from left to right -->
     <div class="content">
-      <h2>2017</h2>
-      <p>blah balah 2017</p>
+      <h1>2018</h1>
+	  <h3>Nowhere Fast <br /> Remind Me <br /> Fall <br /> Killshot  <br />  Venom  <br /> Lucky You <h3>
+      <p>Grammy Awards - Best Rap Song <cite> Pending </cite></p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2014</h2>
-      <p>blah balah 2014</p>
+      <h1>2017</h1>
+	  <h3>Walk On Water <br /> River <h3>
+      <p>MTV Europe Music Awards - Best Hip-Hop</p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
-      <h2>2012</h2>
-      <p>blah balah 2012</p>
+      <h1>2013</h1>
+	  <h3>Berzerk<br /> Survival<br /> Rap God <br /> Monster <h3>
+      <p>MTV Europe Music Awards - Best Hip-Hop Act & Global Icon Award</p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2011</h2>
-      <p>blah balah 2011</p>
+      <h1>2011</h1>
+	  <h3>Space Bound <h3>
+      <p>Grammy Awards - Best Hip-Hop Act <cite> Not Afriad </cite> <br /> Choice Awards - Choice Music: R&B/Hip-Hop Artist</p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
-      <h2>208</h2>
-      <p>blah balah 2008</p>
+      <h1>2010</h1>
+	  <h3>Not Afraid <br /> Love The Way You Lie <br /> No Love <h3>
+      <p>World Music Awards - Worlds Best Rap/Hip-Hop Selling Artist <br /> Choice Awards - Choice Music: Best Rap Artist</p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2007</h2>
-      <p>blah balah 2017</p>
+      <h1>2005</h1>
+	  <h3>Like Toy Soldiers <br /> Mockingbird <br /> Ass like That <br /> When I'm Gone<h3>
+      <p>American Music Awards - Favorite Rap/Hip-Hop Male Artist  <br /> Choice Awards - Choice Music: Rap Artist</p>
     </div>
   </div>
 </div>
 
 <section id="Songs" style="opacity: 1;">
-<h1 id="top1"> SONGS</h1> 
+<h1 id="top3"> SONGS</h1> 
 <div class="Songsdiv">
 <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in song name">
-
+<!-- create song list and user can choose songs from there -->
 <ul id="myMenu">
   <li><a id = "KillShotclk">Kill Shot</a></li>
   <li><a id = "Lovethewayclk" >Love the way</a></li>
@@ -135,53 +141,45 @@
 </section>
 
 
-<section id = "Shop"> 
-<div id = "Container5">
-<h1> Welcome to my site </h1>
-<p>This is the calender page</p>
-</p>
-<div>
-<div id = "rectangle">
-<form>
-  <input type="radio" onClick="changeColour('Red')" name="shirtcolour" value="Red" checked>Red <br>
-  <input type="radio" onClick="changeColour('Blue')" name="shirtcolour" value="Blue">Blue<br>
-  <input type="radio" onClick="changeColour('Green')" name="shirtcolour" value="Green">Green<br> 
-  <input type="radio" onClick="changeColour('Yellow')" name="shirtcolour" value="Yellow">Yellow<br>
-</form> 
-</div>
-</section>
 
 <section id  = "Contacts">
 <div id = "Container3">
-<h1> Contact Details</h>
+<h1 id="top4"> Contact Details</h>
 <h2> Phone Number 1 </h2>
-<h4>0123456789</h4>
+<h3>0123456789</h3>
 <h2> Phone Number 2 </h2>
-<h4>0987654321</h4>
+<h3>0987654321</h3>
 <img src="Assets/phone-symbol.png" style="width:200px;height:200px;">
 </div>
 </section>
 
+  <section id="Subscribe">
+<h1 id="top5"> SUBSCRIBE</h1> 
 
 
-<section id="Feedback">
-<h1 id="top1"> WEBSITE FEEDBACK</h1> 
-<div class="feedbacksliderdiv">
-<h3>
-Thank you for using the Eminem Website  
-</h3>
-<p>
-Please rate the site based on your experience then hit submit.
-</p>
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-  <p>Value: <span id="rating"></span></p>
+
+<div class="mail">
+<h2>Please tell us a short feedback on the website. Along with this, please input your Name and Email (Name top, email bottom) and hit Submit.</h2>
+<form name="form1" action="#" onsubmit="required()">
+<ul>
+<li><input type='feedback' name ='text1'/></li>
+<li class="rq">*Required Field, enter feedback</li>
+<li><input type='text' name ='text2'/></li>
+<li class="rq">*Required Field, enter Name above</li>
+<li><input type='email' name ='text3'/></li>
+<li class="rq">*Required Field, enter email above</li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
 </div>
-
 </section>
+
+
+
 
 <section>
 <div id = "Demo">
-<h1 id="top1"> DEMO VIDEO</h1>
+<h1 id="top6"> DEMO VIDEO</h1>
 <video width="400" controls>
   <source src="mov_bbb.mp4" type="video/mp4">
 </video>
@@ -190,18 +188,58 @@ Please rate the site based on your experience then hit submit.
 
 </section>
 
-<section>
-<h1 id="top1"> TOGGLE TEST</h1>
 
+
+
+
+
+
+<section id="Shop">>
+
+<h1 id="top1"> FAVOURITE SONG LIST CREATOR</h1>
+<div class="playlistcontainer">
+
+<h2>Here is the customizable playlist creator, move the songs that you like into the collections box.</h2>
+
+  <div class="collection" id="dropable" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="icon-shopping-cart" id="itemcount"></div>
+    <span class="heading">Add your favourite songs here</span>
+    <ul class="grid" id="target-grid">
+      
+    </ul>
+    
+  </div>
+
+  <div class="collection draggablediv" >
+    <span class="heading">Songs to choose from</span><br />
+    <ul class="grid">
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item1">Walk On Water</li>
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item2">Venom</li>
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item3">Not Afraid</li>
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item4">Rap God</li>
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item5">When I'm Gone</li>
+      <li draggable="true" class="draggable" ondragstart="drag(event)" id="item6">Mocking Bird</li>
+    </ul>  
+  </div>
+</div>
 </section>
+
+
+
 
 <div class="footernavbar" id="myfooterNavbar">
 
   <a href="#top" class="active">Top</a>
   <a href="#Demo" class="active">Demo</a>
+    <div id="menumobile">
   <a href="#Songs">Songs</a>
   <a href="#Calender">Calender</a>
-  <button type="button" onclick="myFunctionbright/dark()">Bright Mode</button>
+  <a href="#Shop ">Shop</a>
+  <a href="#Feedback">Feedback</a>
+  <a href="#Contacts">Contacts</a>
+</div>
+  <a onclick="myFunctionbright()">Bright Mode</a>
+  <a onclick="myFunctiondark()">Dark Mode</a>
 </div>
 
 
