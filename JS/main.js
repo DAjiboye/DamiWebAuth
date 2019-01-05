@@ -7,6 +7,8 @@ window.onload = function() {
  document.getElementById("top3").style.backgroundColor = localStorage.getItem("backgroundcolor1");
  document.getElementById("top4").style.backgroundColor = localStorage.getItem("backgroundcolor1");
  document.getElementById("top5").style.backgroundColor = localStorage.getItem("backgroundcolor1");
+ document.getElementById("top7").style.backgroundColor = localStorage.getItem("backgroundcolor1");
+ document.getElementById("top8").style.backgroundColor = localStorage.getItem("backgroundcolor1");
  document.getElementById("top6").style.backgroundColor = localStorage.getItem("backgroundcolor1");
  document.body.style.backgroundColor = localStorage.getItem("backgroundcolor1");
 	
@@ -39,6 +41,9 @@ function myFunctionbright() {
 	document.getElementById("top3").style.backgroundColor = "#B3B3B3";
 	document.getElementById("top4").style.backgroundColor = "#B3B3B3";
 	document.getElementById("top5").style.backgroundColor = "#B3B3B3";
+	document.getElementById("top6").style.backgroundColor = "#B3B3B3";
+	document.getElementById("top7").style.backgroundColor = "#B3B3B3";
+	document.getElementById("top8").style.backgroundColor = "#B3B3B3";
 	setcolour2 = "#9d9da2"
 	setColour = "#B3B3B3"
     localStorage.setItem("backgroundcolor1", setColour);
@@ -52,6 +57,9 @@ function myFunctiondark() {
 	document.getElementById("top3").style.backgroundColor = "#3C3C3C";
 	document.getElementById("top4").style.backgroundColor = "#3C3C3C";
     document.getElementById("top5").style.backgroundColor = "#3C3C3C";
+	document.getElementById("top6").style.backgroundColor = "#3C3C3C";
+    document.getElementById("top7").style.backgroundColor = "#3C3C3C";
+	document.getElementById("top8").style.backgroundColor = "#3C3C3C";
 	setcolour2 = "#171616"
     setColour = "#3C3C3C"
     localStorage.setItem("backgroundcolor1", setColour);
