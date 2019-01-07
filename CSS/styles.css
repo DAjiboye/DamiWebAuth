@@ -122,8 +122,8 @@ html {
   background-color: #eee;
 }
 
-#shopdisk {
-   background-image: url("../Assets/Shop-Menu.png");
+/* #shopdisk {
+   background-image: url("../Assets/Shop-Menu.png") no-repeat;
 }
 #aboutdisk {
    background-image: url("../Assets/about-menu.png") no-repeat;
@@ -133,7 +133,7 @@ html {
 }
 #songdisk {
    background-image: url("../Assets/song-menu.png") no-repeat;
-}
+} */
 
 
 .menucontainer{

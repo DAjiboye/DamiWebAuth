@@ -1,5 +1,5 @@
 var setColour;
-// changing backgrund colour and saving it in local
+// changing background colour and saving it in local
 window.onload = function() {
 	
  document.getElementById("top1").style.backgroundColor = localStorage.getItem("backgroundcolor1");	
