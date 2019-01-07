@@ -82,7 +82,7 @@ label, input {
 }
 
 
-
+/* allowing scroll animation  */
 html {
   scroll-behavior: smooth;
 }
@@ -110,11 +110,11 @@ html {
 
 /* Style the navigation links */
 #myMenu li a {
-/*   background-color: #f6f6f6; */   getting rid of this allows highlighting of choice
+/*   background-color: #f6f6f6;   getting rid of this allows highlighting of choice */
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
-  color: black;
+  font-size: 20px;
+  color: #808080;
   display: block
 }
 
@@ -123,16 +123,16 @@ html {
 }
 
 #shopdisk {
-   background-image: url("../Assets/Shop-Menu-Hover.png") no-repeat;
+   background-image: url("../Assets/Shop-Menu.png");
 }
 #aboutdisk {
-   background-image: url("../Assets/about-menu-hover.png") no-repeat;
+   background-image: url("../Assets/about-menu.png") no-repeat;
 }
 #calenderdisk {
-   background-image: url("../Assets/calender-menu-hover.png") no-repeat;
+   background-image: url("../Assets/calender-menu.png") no-repeat;
 }
 #songdisk {
-   background-image: url("../Assets/song-menu-hover.png") no-repeat;
+   background-image: url("../Assets/song-menu.png") no-repeat;
 }
 
 
@@ -214,7 +214,9 @@ html {
 }
 }
 
-
+#aboutdiv {
+	font-size: 20px;
+}
 
 #top {
 	border:5px solid black;
@@ -547,7 +549,7 @@ html {
     border-color: transparent white transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
+/* Fixing the circle for containers on the right side */
 .right::after {
     left: -16px;
 }

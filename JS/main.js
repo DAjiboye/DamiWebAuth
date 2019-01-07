@@ -1,5 +1,5 @@
 var setColour;
-
+// changing backgrund colour and saving it in local
 window.onload = function() {
 	
  document.getElementById("top1").style.backgroundColor = localStorage.getItem("backgroundcolor1");	
@@ -16,7 +16,7 @@ window.onload = function() {
 
 }
 
-
+// form validation, making user input is required
 function required()
 {
 var empt = document.form1.text1.value;
@@ -33,7 +33,7 @@ return true;
 }
 }
 
-
+// bright colour settings
 function myFunctionbright() {
     document.body.style.backgroundColor = "#9d9da2";
 	document.getElementById("top1").style.backgroundColor = "#B3B3B3";
@@ -49,7 +49,7 @@ function myFunctionbright() {
     localStorage.setItem("backgroundcolor1", setColour);
 
 }
-
+// dark colour settings
 function myFunctiondark() {
     document.body.style.backgroundColor = "#171616";
 	document.getElementById("top1").style.backgroundColor = "#3C3C3C";
@@ -68,7 +68,7 @@ function myFunctiondark() {
 
 
 
-
+// video search bar
 
 function myFunction() {
 	
@@ -89,7 +89,7 @@ function myFunction() {
     }
 	
 }
-
+/* 
 var formsubmitvar = document.getElementById("formsubmit");
 if(formsubmitvar){
 formsubmitvar.addEventListener("click", function() {
@@ -97,7 +97,7 @@ formsubmitvar.addEventListener("click", function() {
 	document.getElementById('name').value = '';
 	document.getElementById('email').value = '';
 }, false)};
-
+ */
 
 
 
@@ -126,7 +126,7 @@ function init(){
 	
 	
 	
-    // Declare variables
+    // get elments for each music video name
 
 document.getElementById('KillShotclk').addEventListener('click', video01);
 document.getElementById('Lovethewayclk').addEventListener('click', video02);
@@ -192,7 +192,7 @@ document.getElementById("calmonth12").addEventListener("click", function() {
 	
 
 
-window.changeColour = function(value)
+/* window.changeColour = function(value)
 {
 
     document.getElementById("rectangle").style.backgroundColor;
@@ -213,7 +213,7 @@ window.changeColour = function(value)
     }
     document.getElementById("rectangle").style.backgroundColor = shirtcolor;
 }
-
+ */
 var menuhover;
 
 
@@ -230,7 +230,7 @@ function mousehoverout() {
 }
 
 
-///video
+//video when clicked adds to console log and then changes video
 function video01()
 {
    document.getElementById('video').src = 'https://www.youtube.com/embed/FxQTY-W6GIo';
@@ -290,7 +290,7 @@ function video10()
 	console.log("pressed");
 }
 
-
+// footbar response
 function myFunction2() {
   var x = document.getElementById("myNavbar");
   if (x.className === "footernavbar") {
