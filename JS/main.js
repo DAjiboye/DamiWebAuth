@@ -28,7 +28,7 @@ return false;
 }
 else 
 {
-alert('Thank you for your feedback ("empt2").');
+alert('Thank you for your feedback.');
 return true; 
 }
 }

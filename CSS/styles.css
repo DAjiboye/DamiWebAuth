@@ -1,3 +1,4 @@
+/* body design */
 body{
 	margin-right: 200px;
 	background-color:#171616;
@@ -40,7 +41,7 @@ font-size: 10pt;
 
 
 
-
+/* feedback input designs */
 
 
 form.nameform {
@@ -122,18 +123,6 @@ html {
   background-color: #eee;
 }
 
-/* #shopdisk {
-   background-image: url("../Assets/Shop-Menu.png") no-repeat;
-}
-#aboutdisk {
-   background-image: url("../Assets/about-menu.png") no-repeat;
-}
-#calenderdisk {
-   background-image: url("../Assets/calender-menu.png") no-repeat;
-}
-#songdisk {
-   background-image: url("../Assets/song-menu.png") no-repeat;
-} */
 
 
 .menucontainer{
@@ -655,13 +644,7 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
+/* grid for the drag and drop */
 
 ul.grid{
   background: #aaa;
@@ -701,7 +684,7 @@ ul.grid li{
   color: brown;
   float: center;
 }
-
+/* Background for the items */
 #item1 {
 	 background: url("../Assets/walkonwater.jpg");
 
