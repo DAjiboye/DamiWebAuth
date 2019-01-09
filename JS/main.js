@@ -89,40 +89,12 @@ function myFunction() {
     }
 	
 }
-/* 
-var formsubmitvar = document.getElementById("formsubmit");
-if(formsubmitvar){
-formsubmitvar.addEventListener("click", function() {
-    alert("Thank you for subscribing");
-	document.getElementById('name').value = '';
-	document.getElementById('email').value = '';
-}, false)};
- */
 
 
 
 
 function init(){
 	
-// Feedback Slider
-// function ratingchanges () {
-// if  (rating < 20) {
-// document.getElementById('feedbackslider').style.background = "#a00303";
-// }
-// }
-
-	
-// Feedback Slider
-// var slider = document.getElementById("myRange");
-// var output = document.getElementById("rating");
-// output.innerHTML = slider.value;
-
-// slider.onchange = function() {
-  // output.innerHTML = this.value;
-  // console.log( this.value);
-  // sliderVal = this.value;
-  // createbox(this.value);
-// }	
 	
 	
 	
@@ -190,30 +162,6 @@ document.getElementById("calmonth12").addEventListener("click", function() {
 	
 }
 	
-
-
-/* window.changeColour = function(value)
-{
-
-    document.getElementById("rectangle").style.backgroundColor;
-    switch(value)
-    {
-        case 'Red':
-        shirtcolor = "#FF0000";
-        break;
-        case 'Blue':
-            shirtcolor = "#0000FF";
-        break;
-        case 'Green':
-            shirtcolor = "#00FF00";
-        break;
-		 case 'Yellow':
-            shirtcolor = "#FFFF00";
-        break;
-    }
-    document.getElementById("rectangle").style.backgroundColor = shirtcolor;
-}
- */
 var menuhover;
 
 
